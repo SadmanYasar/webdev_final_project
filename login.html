@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Practical Training Management</title>
+    <link rel="shortcut icon" href="images/transparent-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cousine&family=Montserrat:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="login-page">
+        <div class="form">
+            <div class="container-logo">
+                <!--added this-->
+                <a href="login.html"><img src="images/transparent-logo.png" alt="Logo" id="img-logo1"></a>
+                <p class="title">Students' Practical Training Management System</p>
+            </div>
+            <h1 style="color: white;">WELCOME</h1>
+
+            <form class="register-form" method="post" action="Login.php"> <!--need chg to POST-->
+                <input type="text" name="username" placeholder="Username" required>
+                <br> <br>
+                <input type="password" name="password" placeholder="Password" required>
+                <br> <br>
+                <select class="select" style="width: 150px;" name="userlevel" required>
+                    <option value="" selected="selected"> - select role - </option>
+                    <option value="1">Admin</option>
+                    <option value="2">Coordinator</option>
+                    <option value="3">Student</option>
+                </select>
+                <br><br>
+               <input class="sign-in-button" type="submit" value="Sign In" >
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
